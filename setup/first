@@ -1,0 +1,7 @@
+cd ~
+rm ~/.bashrc
+ln -s dotfiles/.profile .profile
+rm ~/.profile
+ln -s dotfiles/.profile .profile
+rm -rf ~/.config
+ln -s dotfiles/.config/ .config
