@@ -1,0 +1,12 @@
+#%Module1.0
+##
+# imported from  /home/kosuke/local/app/triqs/hubbardI-3.1.0/share/triqs_hubbardI/triqs_hubbardIvars.sh
+proc ModulesHelp { } {
+        puts stderr "TRIQS Hubbard I 3.1.0 for gcc 14.2.0\n"
+}
+
+set             triqs_hubbardI_ROOT   /home/kosuke/local/app/triqs/hubbardI-3.1.0
+
+prepend-path    PATH               $triqs_hubbardI_ROOT/bin
+prepend-path    LD_LIBRARY_PATH    $triqs_hubbardI_ROOT/lib
+prepend-path    CMAKE_PREFIX_PATH  $triqs_hubbardI_ROOT

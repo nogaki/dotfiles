@@ -1,0 +1,13 @@
+#%Module1.0
+##
+proc ModulesHelp { } {
+        puts stderr "Pomerol 2.1\n"
+}
+
+set             POMEROL_ROOT      /home/kosuke/local/app/pomerol/pomerol-2.1
+
+conflict pomerol/1.3
+
+prepend-path    LIBRARY_PATH    $POMEROL_ROOT/lib
+prepend-path    LD_LIBRARY_PATH $POMEROL_ROOT/lib
+prepend-path    CPATH           $POMEROL_ROOT/include
