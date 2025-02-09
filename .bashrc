@@ -152,7 +152,9 @@ PROMPT_COMMAND='add_line'
 
 # to show arrow in terminal
 function _update_ps1() {
-    PS1=$(powerline-shell $?)
+    if command -v powerline-shell &> /dev/null; then
+        PS1=$(powerline-shell $?)
+    fi
 }
 
 if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then

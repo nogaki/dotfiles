@@ -11,7 +11,7 @@ while read package ;do
         continue
     fi
     sudo apt install -y "$package"
-done < ~/dotfiles/setup/apt_list.txt
+done < ~/.dotfiles/setup/apt_list.txt
 
 
 # Python
