@@ -12,3 +12,4 @@ cd "$HOME/.dotfiles"
 source $HOME/.bashrc
 
 ./setup.sh
+source $HOME/.bashrc
