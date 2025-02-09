@@ -19,8 +19,9 @@ cd ~
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 source ~/.bashrc
 
-pyenv install 3.12.9
-pyenv global 3.12.9
+python_version=3.12.9
+pyenv install $python_version
+pyenv global $python_version
 
 python -m pip install --upgrade pip
 python -m pip install --user setuptools

@@ -8,8 +8,8 @@ fi
 git clone git@github.com:nogaki/dotfiles.git "$HOME/.dotfiles"
 cd "$HOME/.dotfiles"
 
-./link.sh
+source $HOME/.dotfiles/link.sh
 source $HOME/.bashrc
 
-./setup.sh
+source $HOME/.dotfiles/setup.sh
 source $HOME/.bashrc
