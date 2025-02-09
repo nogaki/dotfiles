@@ -10,6 +10,8 @@ cd "$HOME/.dotfiles"
 
 source $HOME/.dotfiles/link.sh
 source $HOME/.bashrc
+echo $PATH
 
 source $HOME/.dotfiles/setup.sh
 source $HOME/.bashrc
+echo $PATH
