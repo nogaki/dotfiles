@@ -18,6 +18,7 @@ done < ~/.dotfiles/setup/apt_list.txt
 cd ~
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
 source ~/.bashrc
+echo $PATH
 
 python_version=3.12.9
 pyenv install $python_version
@@ -36,7 +37,7 @@ git clone https://github.com/b-ryan/powerline-shell
 cd powerline-shell
 wget https://github.com/b-ryan/powerline-shell/files/15169621/fix.patch
 patch -p1 -N < fix.patch
-python3 setup.py install --user
+python setup.py install --user
 
 
 
