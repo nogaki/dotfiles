@@ -133,6 +133,12 @@ function share_history {
 PROMPT_COMMAND='share_history'
 shopt -u histappend
 
+
+# pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
 # 出力の後に改行を入れる
 function add_line {
   if [[ -z "${PS1_NEWLINE_LOGIN}" ]]; then
