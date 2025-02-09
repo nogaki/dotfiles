@@ -1,7 +1,7 @@
 ## Introduction
 This is repository of Kosuke Nogaki.
 
-```
+```shell-session
 $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/nogaki/dotfiles/main/scripts/setup_github)"
 ```
 
