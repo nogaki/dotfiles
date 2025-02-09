@@ -17,6 +17,7 @@ done < ~/.dotfiles/setup/apt_list.txt
 # Python
 cd ~
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+source ~/.bashrc
 
 pyenv install 3.12.9
 pyenv global 3.12.9
