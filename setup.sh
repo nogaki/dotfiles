@@ -2,8 +2,8 @@
 
 # apt
 sudo apt update
-sudo apt upgrade
-sudo apt autoremove
+sudo apt upgrade -y
+sudo apt autoremove -y
 
 while read package ;do
     # skip brank line
