@@ -1,0 +1,12 @@
+#%Module1.0
+##
+# imported from /home/kosuke/local/app/triqs/cthyb-3.1.1/share/triqs_cthyb/triqs_cthybvars.sh
+proc ModulesHelp { } {
+        puts stderr "TRIQS CT-HYB 3.1.1 for gcc 14.2.0\n"
+}
+
+set             triqs_cthyb_ROOT      /home/kosuke/local/app/triqs/cthyb-3.1.1
+
+prepend-path    PATH               $triqs_cthyb_ROOT/bin
+prepend-path    LD_LIBRARY_PATH    $triqs_cthyb_ROOT/lib
+prepend-path    PYTHONPATH         $triqs_cthyb_ROOT/lib/python3.13/site-packages

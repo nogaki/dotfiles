@@ -1,0 +1,14 @@
+#%Module1.0
+##
+proc ModulesHelp { } {
+        puts stderr "ALPSCore 2.3.1\n"
+}
+
+set             ALPS_ROOT      /home/kosuke/local/app/alps/alpscore-2.3.1
+
+prepend-path    LIBRARY_PATH    $ALPS_ROOT/lib
+prepend-path    LD_LIBRARY_PATH $ALPS_ROOT/lib
+prepend-path    CPATH           $ALPS_ROOT/include
+
+module load alps-cthyb/.1.0.4
+module load alps-cthyb-segment/.release

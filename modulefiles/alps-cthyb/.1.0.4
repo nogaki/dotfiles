@@ -1,0 +1,12 @@
+#%Module1.0
+##
+proc ModulesHelp { } {
+        puts stderr "ALPS CT-HYB 1.0.4\n"
+}
+
+set             ALPS_CTHYB_ROOT      /home/kosuke/local/app/alps/cthyb-1.0.4
+
+prepend-path    PATH            $ALPS_CTHYB_ROOT/bin
+prepend-path    LIBRARY_PATH    $ALPS_CTHYB_ROOT/lib
+prepend-path    LD_LIBRARY_PATH $ALPS_CTHYB_ROOT/lib
+prepend-path    CPATH           $ALPS_CTHYB_ROOT/include

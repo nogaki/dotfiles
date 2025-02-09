@@ -1,0 +1,9 @@
+#%Module1.0
+##
+proc ModulesHelp { } {
+        puts stderr "ALPS CT-HYB-SEGMENT Release\n"
+}
+
+set             ALPS_CTHYB_SEGMENT_ROOT      /home/kosuke/local/app/alps/cthyb-segment/bin/alps_cthyb
+
+prepend-path    PATH            $ALPS_CTHYB_SEGMENT_ROOT/bin
