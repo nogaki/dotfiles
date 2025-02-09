@@ -1,14 +1,20 @@
 #!/bin/bash
 
 files_and_paths=(
-  ".bashrc:~/.bashrc"
-  ".config:~/.config"
-  ".profile:~/.profile"
+  "$HOME/.dotfiles/.bashrc:$HOME/.bashrc"
+  "$HOME/.dotfiles/.config:$HOME/.config"
+  "$HOME/.dotfiles/.profile:$HOME/.profile"
 )
 
 create_symlink() {
   local source_file=$(realpath $1)
   local destination_path=$2
+
+  if [ ! -e "$source_file" ]; then
+    echo "$source_file does not exist." >&2
+    return 1
+  fi
+
 
   backup_file="${destination_path}.bak"     
 
