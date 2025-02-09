@@ -1,13 +1,13 @@
 #!/bin/bash
 
 
-cd ~
-rm ~/.bashrc
-ln -s dotfiles/.bashrc .bashrc
-rm ~/.profile
-ln -s dotfiles/.profile .profile
-rm -rf ~/.config
-ln -s dotfiles/.config/ .config
+#cd ~
+#rm ~/.bashrc
+#ln -s dotfiles/.bashrc .bashrc
+#rm ~/.profile
+#ln -s dotfiles/.profile .profile
+#rm -rf ~/.config
+#ln -s dotfiles/.config/ .config
 
 sudo apt update
 sudo apt upgrade
