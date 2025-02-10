@@ -17,7 +17,7 @@ done < ~/.dotfiles/setup/apt_list.txt
 # Python
 cd ~
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-source ~/.bashrc
+source ~/.profile
 echo $PATH
 
 python_version=3.12.9
