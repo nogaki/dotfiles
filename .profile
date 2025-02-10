@@ -29,26 +29,29 @@ fi
 
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin${PATH:+:$PATH}"
-if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+if [ -d "$HOME/.pyenv" ] ; then
+    export PYENV_ROOT="$HOME/.pyenv"
+    export PATH="$PYENV_ROOT/bin${PATH:+:$PATH}"
+    if command -v pyenv 1>/dev/null 2>&1; then
+        eval "$(pyenv init -)"
+    fi
 fi
 
 
-
 # My package in $HOME/local
-export LOCAL="$HOME/local"
-export PATH="$LOCAL/sbin:$LOCAL/bin${PATH:+:$PATH}"
-export LD_LIBRARY_PATH="$LOCAL/lib64:$LOCAL/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
-export LD_RUN_PATH="$LOCAL/lib64:$LOCAL/lib${LD_RUN_PATH:+:$LD_RUN_PATH}"
-export LDFLAGS="-L$LOCAL/lib64 -L$LOCAL/lib"
-export CPATH="$LOCAL/include${CPATH:+:$CPATH}"
-export PKG_CONFIG_PATH="$LOCAL/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
-export ACLOCAL_PATH="$LOCAL/share/aclocal"
-export MANPATH="$LOCAL/share/man${MANPATH:+:$MANPATH}"
-export MANDATORY_MANPATH="$MANPATH:${MANDATORY_MANPATH:+:$MANDATORY_MANPATH}"  # for Busybox
-export INFOPATH="$LOCAL/share/info${INFOPATH:+:$INFOPATH}"
+if [ -d "$HOME/local" ] ; then
+    export LOCAL="$HOME/local"
+    export PATH="$LOCAL/sbin:$LOCAL/bin${PATH:+:$PATH}"
+    export LD_LIBRARY_PATH="$LOCAL/lib64:$LOCAL/lib${LD_LIBRARY_PATH:+:$LD_LIBRARY_PATH}"
+    export LD_RUN_PATH="$LOCAL/lib64:$LOCAL/lib${LD_RUN_PATH:+:$LD_RUN_PATH}"
+    export LDFLAGS="-L$LOCAL/lib64 -L$LOCAL/lib"
+    export CPATH="$LOCAL/include${CPATH:+:$CPATH}"
+    export PKG_CONFIG_PATH="$LOCAL/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
+    export ACLOCAL_PATH="$LOCAL/share/aclocal"
+    export MANPATH="$LOCAL/share/man${MANPATH:+:$MANPATH}"
+    export MANDATORY_MANPATH="$MANPATH:${MANDATORY_MANPATH:+:$MANDATORY_MANPATH}"  # for Busybox
+    export INFOPATH="$LOCAL/share/info${INFOPATH:+:$INFOPATH}"
+fi
 
 #export POWERLINE_CWD_FULL_CWD=false
 #export POWERLINE_CWD_MODE="dironly"
