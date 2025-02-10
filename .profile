@@ -47,7 +47,7 @@ export CPATH="$LOCAL/include${CPATH:+:$CPATH}"
 export PKG_CONFIG_PATH="$LOCAL/lib/pkgconfig${PKG_CONFIG_PATH:+:$PKG_CONFIG_PATH}"
 export ACLOCAL_PATH="$LOCAL/share/aclocal"
 export MANPATH="$LOCAL/share/man${MANPATH:+:$MANPATH}"
-export MANDATORY_MANPATH="$MANPATH:$MANDATORY_MANPATH"  # for Busybox
+export MANDATORY_MANPATH="$MANPATH:${MANDATORY_MANPATH:+:$MANDATORY_MANPATH}"  # for Busybox
 export INFOPATH="$LOCAL/share/info${INFOPATH:+:$INFOPATH}"
 
 #export POWERLINE_CWD_FULL_CWD=false
