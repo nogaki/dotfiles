@@ -37,7 +37,7 @@ git clone https://github.com/b-ryan/powerline-shell
 cd powerline-shell
 wget https://github.com/b-ryan/powerline-shell/files/15169621/fix.patch
 patch -p1 -N < fix.patch
-python setup.py install --user
+python setup.py install
 
 
 
