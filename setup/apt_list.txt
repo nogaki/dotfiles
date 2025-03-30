@@ -1,4 +1,5 @@
 build-essential 
+cmake
 libffi-dev
 libssl-dev
 zlib1g-dev
@@ -9,3 +10,12 @@ libsqlite3-dev
 libopencv-dev
 tk-dev
 gnuplot
+stow
+
+slurmctld
+slurmd
+xubuntu-desktop
+
+openmpi-bin
+openmpi-common
+libopenmpi-dev

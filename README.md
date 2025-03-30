@@ -11,6 +11,8 @@ $ bash -c "$(curl -fsSL https://raw.githubusercontent.com/nogaki/dotfiles/main/s
 
 ### TODO
 ファイル分割
+vimrc
+date
 
 #### References
 https://github.com/masawada/dotfiles

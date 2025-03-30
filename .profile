@@ -1,4 +1,3 @@
-echo "~/.profile loaded"
 # ~/.profile: executed by the command interpreter for login shells.
 # This file is not read by bash(1), if ~/.bash_profile or ~/.bash_login
 # exists.
@@ -52,6 +51,9 @@ if [ -d "$HOME/local" ] ; then
     export MANDATORY_MANPATH="$MANPATH:${MANDATORY_MANPATH:+:$MANDATORY_MANPATH}"  # for Busybox
     export INFOPATH="$LOCAL/share/info${INFOPATH:+:$INFOPATH}"
 fi
+
+# To disable binding core in OpenMPI
+export OMPI_MCA_hwloc_base_binding_policy=none
 
 #export POWERLINE_CWD_FULL_CWD=false
 #export POWERLINE_CWD_MODE="dironly"
